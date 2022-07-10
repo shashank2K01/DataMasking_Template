@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}
+    Home Page
+{% endblock %}
+
+
+{% block content %}
+    <div class="container">
+    <form method  = "POST" action="/upload" enctype="multipart/form-data" class="mt-5">
+       
+        <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Select the files</label>
+            <input class="form-control" name="file" type="file" id="formFileMultiple" multiple>
+          </div>
+        
+        <button type="submit" class="btn btn-primary">Upload Files</button>
+    </form>
+
+</div>
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    Process
+{% endblock %}
+
+{% block content %}
+
+    <h1>{{flag}}</h1>>
+{% for item in items %}
+    <a href="{{item}}"><h2> {{item}}</h2></a>
+    
+{% endfor %}
+
+{% endblock %}
